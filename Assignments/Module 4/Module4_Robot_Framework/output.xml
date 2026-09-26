@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.3 on win32)" generated="2026-09-23T20:20:26.588083" rpa="false" schemaversion="5">
+<suite id="s1" name="Module4 Robot Framework" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework">
+<suite id="s1-s1" name="Basic Syntax" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\basic_syntax.robot">
+<test id="s1-s1-t1" name="Open Browser And Navigate" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:27.101616" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T20:20:27.101163" elapsed="2.495999"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T20:20:29.597577" elapsed="0.055724"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:32.655831" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:29.653848" elapsed="3.002307"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:32.739289" level="INFO">Current page contains text 'Swag Labs'.</msg>
+<arg>Swag Labs</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-23T20:20:32.656610" elapsed="0.083168"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:35.742833" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:32.740594" elapsed="3.002501"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T20:20:35.743465" elapsed="2.552265"/>
+</kw>
+<status status="PASS" start="2026-09-23T20:20:27.099570" elapsed="11.196637"/>
+</test>
+<status status="PASS" start="2026-09-23T20:20:26.662326" elapsed="11.634988"/>
+</suite>
+<suite id="s1-s2" name="Custom Keyword Multiple" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\custom_keyword_multiple.robot">
+<test id="s1-s2-t1" name="Calculate Multiple Sums" line="5">
+<kw name="Calculate Sum">
+<msg time="2026-09-23T20:20:38.312804" level="FAIL">No keyword with name 'Calculate Sum' found.</msg>
+<var>${result1}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="FAIL" start="2026-09-23T20:20:38.312666" elapsed="0.000329">No keyword with name 'Calculate Sum' found.</status>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${result1}</arg>
+<arg>30</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.313503" elapsed="0.000073"/>
+</kw>
+<kw name="Calculate Sum">
+<var>${result2}</var>
+<arg>25</arg>
+<arg>15</arg>
+<status status="NOT RUN" start="2026-09-23T20:20:38.314087" elapsed="0.000306"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${result2}</arg>
+<arg>40</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.314965" elapsed="0.000081"/>
+</kw>
+<kw name="Calculate Sum">
+<var>${result3}</var>
+<arg>100</arg>
+<arg>50</arg>
+<status status="NOT RUN" start="2026-09-23T20:20:38.315808" elapsed="0.000124"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${result3}</arg>
+<arg>150</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.316465" elapsed="0.000112"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>All calculations completed successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.317453" elapsed="0.000123"/>
+</kw>
+<status status="FAIL" start="2026-09-23T20:20:38.308946" elapsed="0.009222">No keyword with name 'Calculate Sum' found.</status>
+</test>
+<status status="FAIL" start="2026-09-23T20:20:38.298471" elapsed="0.020882"/>
+</suite>
+<suite id="s1-s3" name="Custom Keyword Test" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\custom_keyword_test.robot">
+<test id="s1-s3-t1" name="Calculate Sum Using Custom Keyword" line="5">
+<kw name="Calculate Sum">
+<msg time="2026-09-23T20:20:38.329646" level="FAIL">No keyword with name 'Calculate Sum' found.</msg>
+<var>${result}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="FAIL" start="2026-09-23T20:20:38.329519" elapsed="0.000277">No keyword with name 'Calculate Sum' found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The calculated sum is ${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.330386" elapsed="0.000070"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>30</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-23T20:20:38.330778" elapsed="0.000065"/>
+</kw>
+<status status="FAIL" start="2026-09-23T20:20:38.326748" elapsed="0.004527">No keyword with name 'Calculate Sum' found.</status>
+</test>
+<status status="FAIL" start="2026-09-23T20:20:38.320692" elapsed="0.011334"/>
+</suite>
+<suite id="s1-s4" name="Data Driven" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\data_driven.robot">
+<test id="s1-s4-t1" name="Login Test" line="11">
+<status status="FAIL" start="2026-09-23T20:20:38.416496" elapsed="0.001795">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-09-23T20:20:38.333993" elapsed="0.085220"/>
+</suite>
+<suite id="s1-s5" name="Element Verification" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\element_verification.robot">
+<test id="s1-s5-t1" name="Verify Element Presence" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:38.427811" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T20:20:38.427305" elapsed="2.190236"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T20:20:40.618113" elapsed="0.059185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:42.680261" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:40.678072" elapsed="2.002670"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:42.706810" level="INFO">Current page contains element 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T20:20:42.681470" elapsed="0.025572"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:45.708858" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:42.707446" elapsed="3.001700"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T20:20:45.709583" elapsed="2.511899"/>
+</kw>
+<status status="PASS" start="2026-09-23T20:20:38.425976" elapsed="9.796101"/>
+</test>
+<status status="PASS" start="2026-09-23T20:20:38.420728" elapsed="9.802346"/>
+</suite>
+<suite id="s1-s6" name="Input Text" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\input_text.robot">
+<test id="s1-s6-t1" name="Input Text In Form" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:48.231173" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T20:20:48.230715" elapsed="1.802189"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T20:20:50.033336" elapsed="0.043157"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:52.078069" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:50.076913" elapsed="2.001349"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:52.079075" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T20:20:52.078601" elapsed="0.172527"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:54.252726" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:52.251472" elapsed="2.001569"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:20:54.254381" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T20:20:54.253600" elapsed="0.150965"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:20:57.405859" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:20:54.404897" elapsed="3.001228"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T20:20:57.406534" elapsed="2.639995"/>
+</kw>
+<status status="PASS" start="2026-09-23T20:20:48.229314" elapsed="11.817944"/>
+</test>
+<status status="PASS" start="2026-09-23T20:20:48.224293" elapsed="11.824432"/>
+</suite>
+<suite id="s1-s7" name="Variables Test" source="c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\variables_test.robot">
+<test id="s1-s7-t1" name="Login Using Variables" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:21:00.066579" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T20:21:00.065413" elapsed="1.985333"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-23T20:21:02.051620" elapsed="0.088389"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:21:04.142699" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:21:02.140882" elapsed="2.002036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:21:04.143961" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T20:21:04.143376" elapsed="0.142314"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:21:06.288031" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:21:04.286040" elapsed="2.002440"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:21:06.290392" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T20:21:06.289320" elapsed="0.146673"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:21:08.437416" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:21:06.436320" elapsed="2.001434"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:21:08.438950" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T20:21:08.438246" elapsed="0.138395"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:21:12.578144" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:21:08.576961" elapsed="4.001474"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-23T20:21:12.611414" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-23T20:21:12.578908" elapsed="0.032669"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-23T20:21:15.612683" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-23T20:21:12.611864" elapsed="3.001008"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-23T20:21:15.613302" elapsed="2.587843"/>
+</kw>
+<status status="PASS" start="2026-09-23T20:21:00.062679" elapsed="18.138901"/>
+</test>
+<status status="PASS" start="2026-09-23T20:21:00.050739" elapsed="18.151553"/>
+</suite>
+<status status="FAIL" start="2026-09-23T20:20:26.591572" elapsed="51.611936"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Module4 Robot Framework" id="s1" pass="4" fail="3" skip="0">Module4 Robot Framework</stat>
+<stat name="Basic Syntax" id="s1-s1" pass="1" fail="0" skip="0">Module4 Robot Framework.Basic Syntax</stat>
+<stat name="Custom Keyword Multiple" id="s1-s2" pass="0" fail="1" skip="0">Module4 Robot Framework.Custom Keyword Multiple</stat>
+<stat name="Custom Keyword Test" id="s1-s3" pass="0" fail="1" skip="0">Module4 Robot Framework.Custom Keyword Test</stat>
+<stat name="Data Driven" id="s1-s4" pass="0" fail="1" skip="0">Module4 Robot Framework.Data Driven</stat>
+<stat name="Element Verification" id="s1-s5" pass="1" fail="0" skip="0">Module4 Robot Framework.Element Verification</stat>
+<stat name="Input Text" id="s1-s6" pass="1" fail="0" skip="0">Module4 Robot Framework.Input Text</stat>
+<stat name="Variables Test" id="s1-s7" pass="1" fail="0" skip="0">Module4 Robot Framework.Variables Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-09-23T20:20:38.307252" level="WARN">Imported library 'c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\custom_keywords.py' contains no keywords.</msg>
+<msg time="2026-09-23T20:20:38.407719" level="ERROR">[ DataDriver ] Error in robot file:
+  File "c:\Users\Nilanjan\Desktop\Selenium With Python\Assignments\Module 4\Module4_Robot_Framework\data_driven.robot", line 0</msg>
+<msg time="2026-09-23T20:20:38.407992" level="ERROR">In source file:
+  File "test_data.csv", line 0</msg>
+<msg time="2026-09-23T20:20:38.415616" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>

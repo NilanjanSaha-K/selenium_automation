@@ -1,0 +1,13 @@
+{
+  "email": "qa_test_1790396270@example.com",
+  "password": "SecurePass123!",
+  "name": "Updated Automation Tester",
+  "firstname": "John",
+  "lastname": "Doe",
+  "address1": "123 Automation Blvd",
+  "country": "United States",
+  "zipcode": "90210",
+  "state": "California",
+  "city": "Los Angeles",
+  "mobile_number": "5559876543"
+}

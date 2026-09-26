@@ -1,0 +1,5 @@
+behave==1.2.6
+requests==2.31.0
+allure-behave==2.13.2
+Faker==24.0.0
+pytest==8.1.1
