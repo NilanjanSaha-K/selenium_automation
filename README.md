@@ -6,11 +6,6 @@ This repository contains the complete coursework, lab assignments, and the final
 
 ## 📂 Repository Structure
 
-selenium_automation/
-├── Assignments/
-├── Certificates/
-└── Project/
-
 The repository is divided into three primary sections: progressive learning **Assignments**, **Certificates** and the **Final Capstone Project**.
 
 ### 1. Assignments
