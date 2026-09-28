@@ -6,37 +6,47 @@ This repository contains the complete coursework, lab assignments, and the final
 
 ## 📂 Repository Structure
 
-The repository is divided into two primary sections: progressive learning **Assignments** and the **Final Capstone Project**[cite: 5].
+selenium_automation/
+├── Assignments/
+├── Certificates/
+└── Project/
+
+The repository is divided into three primary sections: progressive learning **Assignments**, **Certificates** and the **Final Capstone Project**.
 
 ### 1. Assignments
 Contains practical labs and exercises completed throughout the training modules[cite: 5].
 
-*   **`Module 1/`**: Foundational Python programming assignments and Jupyter Notebooks covering core language concepts[cite: 5, 6].
-*   **`Module 2/`**: Web UI automation scripts utilizing Selenium WebDriver, including data-driven testing implementations via CSV (`login_data.csv`)[cite: 5, 6].
-*   **`Module 3/`** (`Module3_BDD_Lab`): Behavior-Driven Development (BDD) implementation using the Behave framework. Includes feature files, step definitions, and a Page Object Model (POM) architectural design[cite: 5, 6].
-*   **`Module 4/`** (`Module4_Robot_Framework`): Keyword-driven automation using the Robot Framework. Contains `.robot` files, custom Python keywords, data-driven tests, and generated execution logs (`log.html`, `report.html`)[cite: 5, 6].
+*   **`Module 1/`**: Foundational Python programming assignments and Jupyter Notebooks covering core language concepts.
+*   **`Module 2/`**: Web UI automation scripts utilizing Selenium WebDriver, including data-driven testing implementations via CSV (`login_data.csv`).
+*   **`Module 3/`** (`Module3_BDD_Lab`): Behavior-Driven Development (BDD) implementation using the Behave framework. Includes feature files, step definitions, and a Page Object Model (POM) architectural design.
+*   **`Module 4/`** (`Module4_Robot_Framework`): Keyword-driven automation using the Robot Framework. Contains `.robot` files, custom Python keywords, data-driven tests, and generated execution logs (`log.html`, `report.html`).
 
 ---
 
-### 2. Final Project (API Automation Framework)
-The `Project/` directory contains a fully functional, enterprise-grade REST API Automation Framework built from scratch using Python `requests`, Behave BDD, and Allure Reporting[cite: 5, 6].
+### 2. Certificates
+The `certificates/` directory contains the official course completion certificates and credentials earned throughout the Python and Automation training journey, validating the skills demonstrated in this repository.
+
+---
+
+### 3. Final Project (API Automation Framework)
+The `Project/` directory contains a fully functional, enterprise-grade REST API Automation Framework built from scratch using Python `requests`, Behave BDD, and Allure Reporting.
 
 **Core Framework Files:**
-*   **`config/settings.py`**: Centralized configuration hub storing global environment variables, base URLs, and timeout settings[cite: 5, 6].
-*   **`core/api_client.py`**: A robust, reusable wrapper for the Python `requests` library. It acts as the engine for all HTTP interactions and automatically logs request/response traffic directly to Allure[cite: 5, 6].
+*   **`config/settings.py`**: Centralized configuration hub storing global environment variables, base URLs, and timeout settings.
+*   **`core/api_client.py`**: A robust, reusable wrapper for the Python `requests` library. It acts as the engine for all HTTP interactions and automatically logs request/response traffic directly to Allure.
 
 **BDD & Test Execution:**
-*   **`features/`**: Contains the business-readable Gherkin test scenarios (e.g., `account_management.feature`, `products.feature`) and the `environment.py` file handling framework setup and teardown hooks[cite: 5, 6].
-*   **`features/steps/`**: Python step definitions (`account_steps.py`, `common_steps.py`) that map the English Gherkin steps to executable backend code[cite: 5, 6].
-*   **`behave.ini`**: Configuration file that registers the Allure formatter with the Behave test runner[cite: 5, 6].
-*   **`requirements.txt`**: Locked dependencies required to run the framework (Behave, Requests, Allure-Behave, Faker)[cite: 5, 6].
+*   **`features/`**: Contains the business-readable Gherkin test scenarios (e.g., `account_management.feature`, `products.feature`) and the `environment.py` file handling framework setup and teardown hooks.
+*   **`features/steps/`**: Python step definitions (`account_steps.py`, `common_steps.py`) that map the English Gherkin steps to executable backend code.
+*   **`behave.ini`**: Configuration file that registers the Allure formatter with the Behave test runner.
+*   **`requirements.txt`**: Locked dependencies required to run the framework (Behave, Requests, Allure-Behave, Faker).
 
 **Reporting & Output:**
-*   **`allure-results/`**: Directory where Behave generates the raw JSON test data during execution[cite: 5, 6].
-*   **`Output/`**: A portfolio directory containing evidence of successful execution[cite: 5, 6]. This includes:
-    *   `Allure Report.pdf`: The final compiled test report[cite: 5, 6].
-    *   Screenshots documenting passing tests, intentionally failing/broken tests, and terminal execution commands (`Terminal_Output_allure_serve.png`, `Test_case3(Pass).png`, etc.)[cite: 5, 6].
-*   **`project_documentation.md`**: In-depth architectural documentation explaining the framework's design pattern and objectives[cite: 5, 6].
+*   **`allure-results/`**: Directory where Behave generates the raw JSON test data during execution.
+*   **`Output/`**: A portfolio directory containing evidence of successful execution. This includes:
+    *   `Allure Report.pdf`: The final compiled test report.
+    *   Screenshots documenting passing tests, intentionally failing/broken tests, and terminal execution commands (`Terminal_Output_allure_serve.png`, `Test_case3(Pass).png`, etc.).
+*   **`project_documentation.md`**: In-depth architectural documentation explaining the framework's design pattern and objectives.
 
 ---
 
