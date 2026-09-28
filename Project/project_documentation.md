@@ -82,10 +82,6 @@ Ensure you have the following installed on your system:
 Navigate to the root directory of the project (`Project/`) and install all required Python libraries. It is highly recommended to use a virtual environment.
 
 ```bash
-# Create a virtual environment (optional but recommended)
-python -m venv venv
-source venv/Scripts/activate  # For Windows
-
 # Install project dependencies
 pip install -r requirements.txt
 ```
